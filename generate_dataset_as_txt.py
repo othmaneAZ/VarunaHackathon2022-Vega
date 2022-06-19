@@ -2,11 +2,13 @@ import os
 import numpy as np
 def generate_txt(dir_path, output_txt):
    f = open(output_txt, "w")
-   for element in os.listdir(dir_path):
-       element_0 = element
+   FILES = os.listdir(dir_path)
+   vec = sorted([int(j) for j in FILES])
+   for element in vec:
+       #element_0 = element
        #element = element.split("_")
-       label = element
-       element_path = dir_path + '/' + element_0
+       label = 0
+       element_path = dir_path + '/' + str(element)
        num_frames = len(os.listdir(element_path))
        f.write(element_path + ' ' + str(num_frames) + ' ' + '0' + '\n') 
       '''
