@@ -45,3 +45,6 @@ config file: **config_slowfast_varuna.py**
 ```
 python test_slowfast.py
 ```
+
+## Output file for the test set
+**The polygon 167 has no data so we add a dummy label in the test file for that polygon**
