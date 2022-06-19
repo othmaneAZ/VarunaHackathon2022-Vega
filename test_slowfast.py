@@ -100,7 +100,10 @@ with open('output_test.csv','w') as f:
     w.writerow(dict)
     
 
-
+df = pd.read_csv('./output_test.csv', header = None)
+a = df.T
+a.columns = ['id', 'crop_type']
+a.to_csv('result.csv', index=False)
 
 '''
 #print(predicted)
