@@ -17,6 +17,8 @@ cd mmaction2
 pip3 install -e .
 ```
 For more information about this Package installation, please refer to the https://mmaction2.readthedocs.io/en/latest/install.html for more detailed instruction.
+
+Other dependencies.
 ```
 pip install rasterio geopandas 
 ```
